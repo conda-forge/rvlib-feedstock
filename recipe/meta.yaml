@@ -20,13 +20,13 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python >= 3.5
+    - python >=3.5
     - pip
     - cffi
     - pyyaml
 
   run:
-    - python >= 3.5
+    - python >=3.5
     - numpy
     - cffi
     - numba
