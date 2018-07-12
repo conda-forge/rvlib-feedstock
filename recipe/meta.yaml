@@ -12,7 +12,7 @@ source:
   sha1: {{ sha1 }}
 
 build:
-  skip: True  # [win or not py35]
+  skip: True  # [win]
   number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -20,13 +20,13 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
-    - setuptools
+    - python >= 3.5
+    - pip
     - cffi
     - pyyaml
 
   run:
-    - python  # [py35]
+    - python >= 3.5
     - numpy
     - cffi
     - numba
