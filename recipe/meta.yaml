@@ -1,6 +1,6 @@
 {% set name = "rvlib" %}
-{% set version = "0.0.1" %}
-{% set sha1 = "d74f5c10e956c09349a22a1a80e7e225978de253" %}
+{% set version = "0.0.2" %}
+{% set sha1 = "816ccf15110f7540390d4ecd466df1f797999812" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [win]
-  number: 1001
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
