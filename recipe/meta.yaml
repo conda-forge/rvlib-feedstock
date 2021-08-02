@@ -13,19 +13,19 @@ source:
 
 build:
   number: 1
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python >=3.5
+    - python
     - pip
     - cffi
     - pyyaml
 
   run:
-    - python >=3.5
+    - python
     - numpy
     - cffi
     - numba >=0.49
