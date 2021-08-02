@@ -12,8 +12,7 @@ source:
   sha1: {{ sha1 }}
 
 build:
-  skip: True  # [win]
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -29,7 +28,7 @@ requirements:
     - python >=3.5
     - numpy
     - cffi
-    - numba
+    - numba >=0.49
     - pyyaml
 
 test:
