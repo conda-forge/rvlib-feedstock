@@ -19,8 +19,6 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
-    - m2w64-gcc                              # win
-    - libpython                              # win
     - {{ compiler('c') }}
 
   host:
@@ -30,7 +28,9 @@ requirements:
     - cffi
     - pyyaml
     - numpy
-
+    - m2w64-gcc                              # win
+    - libpython                              # win
+  
   run:
     - python
     - numpy
