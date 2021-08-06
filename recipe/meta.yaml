@@ -10,7 +10,7 @@ source:
   sha256: d79b45bedff32653ed4662da1a273d3b3d70ea960ad4fd8d74509888d7f7f45d
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -28,8 +28,6 @@ requirements:
     - cffi
     - pyyaml
     - numpy
-    - m2w64-gcc                              # [win]
-    - libpython                              # [win]
 
   run:
     - python
