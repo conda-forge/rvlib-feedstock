@@ -14,7 +14,7 @@ c_compiler_version:            # [unix]
 cxx_compiler:
   - gxx                        # [linux]
   - clangxx                    # [osx]
-  - vs2017                     # [win]
+  - m2w64-gc                     # [win]
 cxx_compiler_version:          # [unix]
   - 11                         # [osx]
   - 9                          # [linux]

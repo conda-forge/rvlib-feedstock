@@ -28,7 +28,6 @@ requirements:
     - cffi
     - pyyaml
     - numpy
-
   
   run:
     - python
