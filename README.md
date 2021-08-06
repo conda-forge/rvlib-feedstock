@@ -219,5 +219,6 @@ Feedstock Maintainers
 =====================
 
 * [@danielcsaba](https://github.com/danielcsaba/)
+* [@knaaptime](https://github.com/knaaptime/)
 * [@sglyon](https://github.com/sglyon/)
 
