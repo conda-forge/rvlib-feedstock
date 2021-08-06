@@ -1,6 +1,6 @@
 {% set name = "rvlib" %}
-{% set version = "0.0.2" %}
-{% set sha1 = "816ccf15110f7540390d4ecd466df1f797999812" %}
+{% set version = "0.0.5" %}
+{% set sha1 = "aa18c192a7bdc44e3c6998795da9fc7b988d12d9" %}
 
 package:
   name: {{ name }}
@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/QuantEcon/rvlib/archive/{{ version }}.tar.gz
+  url: https://github.com/QuantEcon/rvlib/archive/v{{ version }}.tar.gz
   sha1: {{ sha1 }}
 
 build:
-  skip: True  # [win]
+  skip: true  # [win]
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -40,7 +40,7 @@ about:
   home: https://github.com/QuantEcon/rvlib
   license: BSD 3-Clause
   license_file: LICENSE.txt
-  summary: 'Mimicking the API of Distributions.jl in Python with added numba support.'
+  summary: Mimicking the API of Distributions.jl in Python with added numba support.
   description: |
     rvlib is a statistical package that mimics the API of Julia's
     Distributions.jl package while at the same time achieves a similar
