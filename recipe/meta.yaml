@@ -28,7 +28,9 @@ requirements:
     - cffi
     - pyyaml
     - numpy
-  
+    - m2w64-gcc                              # [win]
+    - libpython                              # [win]
+
   run:
     - python
     - numpy
