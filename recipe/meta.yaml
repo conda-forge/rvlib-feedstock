@@ -22,7 +22,6 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ compiler('m2w64_c') }}              # [win]
-    - libpython                              # [win]
   host:
     - python
     - setuptools
