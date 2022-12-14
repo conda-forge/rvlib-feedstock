@@ -1,12 +1,11 @@
-{% set name = "rvlib" %}
 {% set version = "0.0.6" %}
 
 package:
-  name: {{ name }}
+  name: rvlib
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/r/rvlib/rvlib-{{ version }}.tar.gz
   sha256: 05a4bbb74386ed083900029a8ef6f19d913d8e02dc997b409f4097f731d6918f
 
 build:
