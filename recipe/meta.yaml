@@ -1,16 +1,15 @@
-{% set name = "rvlib" %}
 {% set version = "0.0.6" %}
 
 package:
-  name: {{ name }}
+  name: rvlib
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/r/rvlib/rvlib-{{ version }}.tar.gz
   sha256: 05a4bbb74386ed083900029a8ef6f19d913d8e02dc997b409f4097f731d6918f
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -43,7 +42,7 @@ test:
 
 about:
   home: https://github.com/QuantEcon/rvlib
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: 'Mimicking the API of Distributions.jl in Python with added numba support.'
   description: |
