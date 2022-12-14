@@ -42,7 +42,7 @@ test:
 
 about:
   home: https://github.com/QuantEcon/rvlib
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: 'Mimicking the API of Distributions.jl in Python with added numba support.'
   description: |
