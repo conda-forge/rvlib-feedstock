@@ -5,21 +5,18 @@ channel_targets:
 m2w64_c_compiler:
 - gcc
 m2w64_c_compiler_version:
-- '13'
+- '14'
 m2w64_c_stdlib:
 - m2w64-sysroot
 m2w64_c_stdlib_version:
 - '12'
 numpy:
-- '2.0'
+- '2'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.10.* *_cpython
+- 3.14.* *_cp314
 target_platform:
 - win-64
-zip_keys:
-- - python
-  - numpy
