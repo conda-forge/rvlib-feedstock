@@ -9,7 +9,7 @@ source:
   sha256: 05a4bbb74386ed083900029a8ef6f19d913d8e02dc997b409f4097f731d6918f
 
 build:
-  number: 8
+  number: 9
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -19,10 +19,9 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
-    - {{ compiler('c') }}                    # [not win]
-    - {{ stdlib("c") }}                      # [not win]
-    - {{ compiler('m2w64_c') }}              # [win]
-    - {{ stdlib("m2w64_c") }}                # [win]
+    # uses m2w64 toolchain on windows, see conda_build_config.yaml
+    - {{ stdlib("c") }}
+    - {{ compiler("c") }}
   host:
     - python
     - setuptools
@@ -30,7 +29,7 @@ requirements:
     - cffi
     - pyyaml
     - numpy
-    - libpython                              # [win]
+    - distutils-activate-mingw               # [win]
   run:
     - python
     - numpy
