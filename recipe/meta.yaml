@@ -29,7 +29,7 @@ requirements:
     - cffi
     - pyyaml
     - numpy
-    - libpython                              # [win]
+    - distutils-activate-mingw               # [win]
   run:
     - python
     - numpy
